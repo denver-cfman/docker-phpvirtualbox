@@ -2,8 +2,8 @@ FROM ubuntu
 MAINTAINER Christian Lück <christian@lueck.tv>
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y \
-  nginx php5-fpm supervisor \
-  wget unzip php5-cli
+  nginx php-fpm supervisor \
+  wget unzip php-cli
 
 # install phpvirtualbox
 RUN wget https://github.com/phpvirtualbox/phpvirtualbox/archive/master.zip -O phpvirtualbox-master.zip
